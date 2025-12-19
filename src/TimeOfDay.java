@@ -7,7 +7,7 @@ public class TimeOfDay implements Comparable<TimeOfDay> {
     //минуты (от 0 до 59)
     private int minutes;
 
-    public TimeOfDay (int hours, int minutes){
+    public TimeOfDay(int hours, int minutes) {
         this.hours = hours;
         this.minutes = minutes;
     }
