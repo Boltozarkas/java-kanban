@@ -1,4 +1,4 @@
-public class CounterOfTrainings {
+public class CounterOfTrainings implements Comparable<CounterOfTrainings> {
     private Coach coach;
     private int count;
 
@@ -15,4 +15,9 @@ public class CounterOfTrainings {
         return count;
     }
 
+    @Override
+    public int compareTo(CounterOfTrainings other) {
+        // Сортировка по убыванию количества тренировок
+        return Integer.compare(other.count, this.count);
+    }
 }
